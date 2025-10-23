@@ -1,12 +1,13 @@
 import React from 'react'
 
 
-export const FirstApp = () => {
-    
+export const FirstApp = ({title, subTitle}) => {
+    console.log(title)
+
     return (
     <>
-    <h1>Sergio</h1>
-    <p>soy un subtitulo</p>
+    <h1>{title}</h1>
+    <p>{subTitle}</p>
     </>
   )
 }

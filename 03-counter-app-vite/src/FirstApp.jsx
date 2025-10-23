@@ -1,8 +1,9 @@
 import React from 'react'
-
+import Proptypes from 'prop-types'
 
 export const FirstApp = ({title, subTitle}) => {
-    console.log(title)
+
+
 
     return (
     <>
@@ -10,4 +11,10 @@ export const FirstApp = ({title, subTitle}) => {
     <p>{subTitle}</p>
     </>
   )
+}
+
+
+FirstApp.Proptypes = {
+    title: Proptypes.string.isRequired,
+    subTitle: Proptypes.number.isRequired,
 }
